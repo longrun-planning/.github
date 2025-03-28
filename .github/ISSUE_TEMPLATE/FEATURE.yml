@@ -1,0 +1,27 @@
+name: 🚀 機能追加・改善
+description: 機能追加・改善についてはこちら
+labels: ["feature"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 現在の課題
+      description: この機能はユーザーやシステムのどのような課題を解決するものですか？
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: 解決策
+      description: その課題をどのような方法で解決しようとしていますか？
+    validations:
+      required: true
+  - type: textarea
+    id: alternative
+    attributes:
+      label: 代替案
+      description: 別の機能の活用、運用の工夫や適切なアナウンスの追加等によってその課題を解消（回避）する方法があれば記入してください。
+  - type: textarea
+    id: remarks
+    attributes:
+      label: 備考・補足
