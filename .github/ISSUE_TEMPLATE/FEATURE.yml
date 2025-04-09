@@ -1,6 +1,6 @@
 name: 🚀 機能追加・改善
 description: 機能追加・改善についてはこちら
-labels: ["feature"]
+labels: ["enhancement"]
 body:
   - type: textarea
     id: problem
