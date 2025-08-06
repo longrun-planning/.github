@@ -1,0 +1,98 @@
+name: 🔧 リファクタリング
+description: コードの改善・リファクタリングについてはこちら
+labels: ["refactoring", "technical-debt"]
+body:
+  - type: textarea
+    id: current-state
+    attributes:
+      label: 現在の状況
+      description: リファクタリング対象のコードやシステムの現在の状況を説明してください。
+      placeholder: |
+        - 対象ファイル/モジュール：
+        - 現在の問題点：
+        - 技術的負債の内容：
+    validations:
+      required: true
+  - type: dropdown
+    id: refactoring-type
+    attributes:
+      label: リファクタリングの種類
+      description: どのような種類のリファクタリングですか？
+      options:
+        - コード構造の改善
+        - パフォーマンスの最適化
+        - 可読性の向上
+        - テストカバレッジの改善
+        - 依存関係の整理
+        - セキュリティの強化
+        - その他
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 優先度
+      description: このリファクタリングの優先度はどれくらいですか？
+      options:
+        - 高：すぐに対応が必要
+        - 中：近いうちに対応したい
+        - 低：時間があるときに対応
+      default: 1
+    validations:
+      required: true
+  - type: textarea
+    id: improvement-plan
+    attributes:
+      label: 改善計画
+      description: どのようにリファクタリングを行う予定ですか？
+      placeholder: |
+        - 改善後の設計案：
+        - 実装方針：
+        - 影響範囲：
+    validations:
+      required: true
+  - type: textarea
+    id: benefits
+    attributes:
+      label: 期待される効果
+      description: このリファクタリングによってどのような効果が期待されますか？
+      placeholder: |
+        - 保守性の向上
+        - パフォーマンスの改善
+        - バグの削減
+        - 開発効率の向上
+        - その他
+  - type: textarea
+    id: risks
+    attributes:
+      label: リスクと対策
+      description: リファクタリングに伴うリスクと対策があれば記入してください。
+      placeholder: |
+        - 想定されるリスク：
+        - リスク軽減策：
+        - ロールバック計画：
+  - type: textarea
+    id: testing-plan
+    attributes:
+      label: テスト計画
+      description: リファクタリング後のテスト方法を記入してください。
+      placeholder: |
+        - 既存テストの確認
+        - 追加テストの実装
+        - 手動テストの範囲
+        - パフォーマンステスト
+  - type: textarea
+    id: timeline
+    attributes:
+      label: 作業スケジュール
+      description: 大まかな作業スケジュールがあれば記入してください。
+      placeholder: |
+        - フェーズ1：調査・設計（X日）
+        - フェーズ2：実装（X日）
+        - フェーズ3：テスト・検証（X日）
+  - type: textarea
+    id: remarks
+    attributes:
+      label: 備考・補足
+      description: その他関連する情報があれば記入してください.
