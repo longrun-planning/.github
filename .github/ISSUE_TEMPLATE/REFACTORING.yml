@@ -7,17 +7,12 @@ body:
     attributes:
       label: 現在の状況
       description: リファクタリング対象のコードやシステムの現在の状況を説明してください。
-      placeholder: |
-        - 対象ファイル/モジュール：
-        - 現在の問題点：
-        - 技術的負債の内容：
     validations:
       required: true
   - type: dropdown
     id: refactoring-type
     attributes:
       label: リファクタリングの種類
-      description: どのような種類のリファクタリングですか？
       options:
         - コード構造の改善
         - パフォーマンスの最適化
@@ -33,7 +28,6 @@ body:
     id: priority
     attributes:
       label: 優先度
-      description: このリファクタリングの優先度はどれくらいですか？
       options:
         - 高：すぐに対応が必要
         - 中：近いうちに対応したい
@@ -46,19 +40,11 @@ body:
     attributes:
       label: 改善計画
       description: どのようにリファクタリングを行う予定ですか？
-      placeholder: |
-        - 改善後の設計案：
-        - 実装方針：
-        - 影響範囲：
   - type: textarea
     id: risks
     attributes:
       label: リスクと対策
       description: リファクタリングに伴うリスクと対策があれば記入してください。
-      placeholder: |
-        - 想定されるリスク：
-        - リスク軽減策：
-        - ロールバック計画：
   - type: textarea
     id: remarks
     attributes:
